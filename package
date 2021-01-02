@@ -17,8 +17,8 @@ esac
 
 print '[Desktop Entry]
 Type=Application
-Name=Clock app
-Comment=Set the time
+Name=HDMI/LCD
+Comment=HDMI/LCD display output
 Exec=test.elf
 Icon=icon
 Terminal=false
@@ -26,6 +26,6 @@ Type=Application
 Categories=applications;
 X-OD-NeedsDownscaling=true' > opk/default."$1".desktop
 
-mksquashfs ./opk clock_app_"$1".opk -all-root -noappend -no-exports -no-xattrs
+mksquashfs ./opk hdmi_app_"$1".opk -all-root -noappend -no-exports -no-xattrs
 
 rm -r opk

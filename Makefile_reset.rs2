@@ -1,8 +1,8 @@
-PRGNAME     = test.elf
-CC			= /opt/gcw0-toolchain/usr/bin/mipsel-linux-gcc
+PRGNAME     = reset.elf
+CC			= /opt/retrostone2-toolchain/usr/bin/arm-linux-gcc
 
-OBJS		= main.o font/font_drawing.o
-CFLAGS		= -O0 -g3 -std=gnu99 -I. -Ifont
+OBJS		= reset.o font/font_drawing.o
+CFLAGS		= -Os -std=gnu99 -I. -Ifont
 LDFLAGS     =  -lc -lgcc -lm -lSDL -lasound
 
 
